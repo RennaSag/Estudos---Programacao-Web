@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Tabuleiro de xadrez</title>
+    <style>
+
+        /* tamanho da fonte dos tabledata*/
+        td {
+            font-size: 32px; 
+            font-family: Arial, sans-serif; 
+        }
+        /* contorno  */
+        .contBranco {
+            text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="0" align="center">
+        <tr>
+            <!--parte das peças principais pretas-->
+            <td bgcolor="black" width="40" height="40" align="center" class="contBranco">&#9820;</td> 
+            <td bgcolor="white" width="40" height="40" align="center">&#9822;</td>
+
+            <td bgcolor="black" width="40" height="40" align="center" class="contBranco">&#9821;</td>
+            <td bgcolor="white" width="40" height="40" align="center">&#9818;</td>
+
+            <td bgcolor="black" width="40" height="40" align="center" class="contBranco">&#9819;</td>
+            <td bgcolor="white" width="40" height="40" align="center">&#9821;</td>
+
+            <td bgcolor="black" width="40" height="40" align="center" class="contBranco">&#9822;</td>
+            <td bgcolor="white" width="40" height="40" align="center" class="contBranco">&#9820;</td> 
+        </tr>
+
+        <tr>
+            <!--peão preto-->
+            <td bgcolor="white" width="40" height="40" align="center" class="contBranco">&#9823;</td> 
+            <td bgcolor="black" width="40" height="40" align="center" class="contBranco">&#9823;</td>
+
+            <td bgcolor="white" width="40" height="40" align="center" class="contBranco">&#9823;</td> 
+            <td bgcolor="black" width="40" height="40" align="center" class="contBranco">&#9823;</td>
+
+            <td bgcolor="white" width="40" height="40" align="center" class="contBranco">&#9823;</td> 
+            <td bgcolor="black" width="40" height="40" align="center" class="contBranco">&#9823;</td>
+
+            <td bgcolor="white" width="40" height="40" align="center" class="contBranco">&#9823;</td> 
+            <td bgcolor="black" width="40" height="40" align="center" class="contBranco">&#9823;</td>
+        </tr>
+
+
+        <tr>
+            <!--vazio-->
+            <td bgcolor="black" width="40" height="40" align="center"></td> 
+            <td bgcolor="white" width="40" height="40" align="center"></td>
+
+            <td bgcolor="black" width="40" height="40" align="center"></td> 
+            <td bgcolor="white" width="40" height="40" align="center"></td>
+
+            <td bgcolor="black" width="40" height="40" align="center"></td> 
+            <td bgcolor="white" width="40" height="40" align="center"></td>
+
+            <td bgcolor="black" width="40" height="40" align="center"></td> 
+            <td bgcolor="white" width="40" height="40" align="center"></td>
+        </tr>
+
+        <tr>
+            <!--vazio 2-->
+            <td bgcolor="white" width="40" height="40" align="center" class="contBranco"></td> 
+            <td bgcolor="black" width="40" height="40" align="center" class="contBranco"></td>
+
+            <td bgcolor="white" width="40" height="40" align="center" class="contBranco"></td> 
+            <td bgcolor="black" width="40" height="40" align="center" class="contBranco"></td>
+
+            <td bgcolor="white" width="40" height="40" align="center" class="contBranco"></td> 
+            <td bgcolor="black" width="40" height="40" align="center" class="contBranco"></td>
+
+            <td bgcolor="white" width="40" height="40" align="center" class="contBranco"></td> 
+            <td bgcolor="black" width="40" height="40" align="center" class="contBranco"></td>
+        </tr>
+
+        <tr>
+            <!--vazio 3-->
+            <td bgcolor="black" width="40" height="40" align="center"></td> 
+            <td bgcolor="white" width="40" height="40" align="center"></td>
+
+            <td bgcolor="black" width="40" height="40" align="center"></td> 
+            <td bgcolor="white" width="40" height="40" align="center"></td>
+
+            <td bgcolor="black" width="40" height="40" align="center"></td> 
+            <td bgcolor="white" width="40" height="40" align="center"></td>
+
+            <td bgcolor="black" width="40" height="40" align="center"></td> 
+            <td bgcolor="white" width="40" height="40" align="center"></td>
+        </tr>
+
+        <tr>
+            <!--vazio 4-->
+            <td bgcolor="white" width="40" height="40" align="center" class="contBranco"></td> 
+            <td bgcolor="black" width="40" height="40" align="center" class="contBranco"></td>
+
+            <td bgcolor="white" width="40" height="40" align="center" class="contBranco"></td> 
+            <td bgcolor="black" width="40" height="40" align="center" class="contBranco"></td>
+
+            <td bgcolor="white" width="40" height="40" align="center" class="contBranco"></td> 
+            <td bgcolor="black" width="40" height="40" align="center" class="contBranco"></td>
+
+            <td bgcolor="white" width="40" height="40" align="center" class="contBranco"></td> 
+            <td bgcolor="black" width="40" height="40" align="center" class="contBranco"></td>
+        </tr>
+
+        <tr>
+            <!--peões brancos-->
+            <td bgcolor="black" width="40" height="40" align="center" class="contBranco">&#9817;</td> 
+            <td bgcolor="white" width="40" height="40" align="center" class="contBranco">&#9817;</td>
+
+            <td bgcolor="black" width="40" height="40" align="center" class="contBranco">&#9817;</td> 
+            <td bgcolor="white" width="40" height="40" align="center" class="contBranco">&#9817;</td>
+
+            <td bgcolor="black" width="40" height="40" align="center" class="contBranco">&#9817;</td> 
+            <td bgcolor="white" width="40" height="40" align="center" class="contBranco">&#9817;</td>
+
+            <td bgcolor="black" width="40" height="40" align="center" class="contBranco">&#9817;</td> 
+            <td bgcolor="white" width="40" height="40" align="center" class="contBranco">&#9817;</td>        
+        </tr>
+
+        <tr>
+            <!--principais pretas-->
+            <td bgcolor="white" width="40" height="40" align="center" class="contBranco">&#9814;</td> 
+            <td bgcolor="black" width="40" height="40" align="center" class="contBranco">&#9816;</td>
+
+            <td bgcolor="white" width="40" height="40" align="center" class="contBranco">&#9815;</td> 
+            <td bgcolor="black" width="40" height="40" align="center" class="contBranco">&#9813; </td>
+
+            <td bgcolor="white" width="40" height="40" align="center" class="contBranco">&#9812;</td> 
+            <td bgcolor="black" width="40" height="40" align="center" class="contBranco">&#9815;</td>
+
+            <td bgcolor="white" width="40" height="40" align="center" class="contBranco">&#9816;</td> 
+            <td bgcolor="black" width="40" height="40" align="center" class="contBranco">&#9814; </td>
+        </tr>
+       
+
+    </table>
+</body>
+
+</html>
