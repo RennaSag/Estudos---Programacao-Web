@@ -43,4 +43,58 @@
         }
         echo("O segundo eh maior");
     }
+
+
+    function verifica_data($dia, $mes, $ano) {
+        return checkdate($mes, $dia, $ano);
+    }
+    $dia = 21;
+    $mes = 4;
+    $ano = 2003;
+    
+    if (verifica_data($dia, $mes, $ano)) {
+        echo "Data valida";
+    } else {
+        echo "Data invalida";
+    }
+
+
+
+    function data_extenso_timestap($timestamp){
+        return date("d \d\e F \d\e Y", $timestamp);
+    }
+
+    $timestamp = time();
+    echo data_extenso_timestamp($timestamp);
+
+
+    function data_extenso($dia, $mes, $ano){
+        $timestamp = mktime(0, 0, 0, $mes, $dia, $ano);
+
+        return date("d \d\e F \d\e Y", $timestamp);
+    }
+
+
+    function gera_decimal_aleatorio($min, $max, $qtD){
+        $fator = pow(10, $qtD);
+
+        return number_format(mt_rand($min * $fator, $max * $fator)) / $fator,$qtD, '.', '');    
+    }
+    echo gera_decimal_aleatorio(0, 1000, 2);
+
+
+
+    function formata_reais($num){
+        echo 'R$ ' . number_format($num, 2, ',', '.');
+    }
+
+
+    function oculta_vogais($string){
+        echo str_replace(array('a','e','i','o','u'), '?', $string);
+    }
+
+
+    function inverte($string){
+        strrev($string);
+    }
 ?>
