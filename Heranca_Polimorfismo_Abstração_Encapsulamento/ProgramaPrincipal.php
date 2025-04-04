@@ -7,11 +7,11 @@ require_once 'dvd.php';
 
 function mostrarSeparador($titulo) {
     echo "\n.........................\n";
-    echo "              $titulo              ";
-    echo "\n.........................\n";
+    echo "              $titulo         ";
+    echo "\n.........................\n <br>";
 }
 
-mostrarSeparador("LIVROS");
+mostrarSeparador("<br> LIVROS");
 
 $livro1 = new Livros(
     1, 
@@ -19,12 +19,12 @@ $livro1 = new Livros(
     "10/01/2022", 
     ["Machado de Assis"], 
     "Companhia das Letras", 
-    1899
+    1899 
 );
 
 $livro2 = new Livros(
     2, 
-    "O Senhor dos Anéis", 
+    "<br> O Senhor dos Anéis", 
     "15/03/2022", 
     ["J.R.R. Tolkien"], 
     "HarperCollins", 
@@ -33,7 +33,7 @@ $livro2 = new Livros(
 
 $livro3 = new Livros(
     3, 
-    "Harry Potter e a Pedra Filosofal", 
+    "<br> Harry Potter e a Pedra Filosofal", 
     "20/05/2022", 
     ["J.K. Rowling"], 
     "Rocco", 
@@ -50,7 +50,7 @@ mostrarSeparador("REVISTAS");
 
 $revista1 = new Revista(
     4, 
-    "National Geographic", 
+    "<br> National Geographic", 
     ["National Geographic Society"], 
     "05/02/2022", 
     "Abril 2022", 
@@ -61,7 +61,7 @@ $revista1 = new Revista(
 
 $revista2 = new Revista(
     5, 
-    "Scientific American Brasil", 
+    "<br> Scientific American Brasil", 
     ["Scientific American"], 
     "10/04/2022", 
     "Março 2022", 
@@ -72,7 +72,7 @@ $revista2 = new Revista(
 
 $revista3 = new Revista(
     6, 
-    "Superinteressante", 
+    "<br> Superinteressante", 
     ["Editora Abril"], 
     "15/06/2022", 
     "Maio 2022", 
@@ -87,11 +87,11 @@ $revista2->imprimirDados();
 $revista3->imprimirDados();
 
 
-mostrarSeparador("CDs");
+mostrarSeparador("<br><br>CDs");
 
 $cd1 = new CD(
     7, 
-    "Thriller", 
+    "<br> Thriller", 
     "03/03/2022", 
     ["Michael Jackson"], 
     "Pop", 
@@ -100,7 +100,7 @@ $cd1 = new CD(
 
 $cd2 = new CD(
     8, 
-    "The Dark Side of the Moon", 
+    "<br> The Dark Side of the Moon", 
     "12/04/2022", 
     ["Pink Floyd"], 
     "Rock Progressivo", 
@@ -109,7 +109,7 @@ $cd2 = new CD(
 
 $cd3 = new CD(
     9, 
-    "Back in Black", 
+    "<br> Back in Black", 
     "25/05/2022", 
     ["AC/DC"], 
     "Hard Rock", 
@@ -122,11 +122,11 @@ $cd2->imprimirDados();
 $cd3->imprimirDados();
 
 
-mostrarSeparador("DVDs");
+mostrarSeparador("<br><br>DVDs");
 
 $dvd1 = new DVD(
     10, 
-    "O Poderoso Chefão", 
+    "<br> O Poderoso Chefão", 
     ["Francis Ford Coppola"], 
     "01/06/2022", 
     "Filme", 
@@ -135,7 +135,7 @@ $dvd1 = new DVD(
 
 $dvd2 = new DVD(
     11, 
-    "Breaking Bad - Temporada Completa", 
+    "<br> Breaking Bad - Temporada Completa", 
     ["Vince Gilligan"], 
     "15/07/2022", 
     "Série", 
@@ -144,11 +144,11 @@ $dvd2 = new DVD(
 
 $dvd3 = new DVD(
     12, 
-    "Rock in Rio 2022", 
+    "<br> Rock in Rio 2022", 
     ["Diversos Artistas"], 
     "30/08/2022", 
     "Show", 
-    "Gravação do festival de música Rock in Rio edição 2022"
+    "Gravação do festival de música Rock in Rio edição 2022 \n"
 );
 
 
@@ -157,7 +157,7 @@ $dvd2->imprimirDados();
 $dvd3->imprimirDados();
 
 
-mostrarSeparador("TODOS OS ITENS DA COLEÇÃO");
+mostrarSeparador("<br><br>TODOS OS ITENS DA COLEÇÃO");
 
 $colecao = [
     $livro1, $livro2, $livro3,

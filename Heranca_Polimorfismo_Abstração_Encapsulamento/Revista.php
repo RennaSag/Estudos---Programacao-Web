@@ -5,7 +5,7 @@ class Revista extends Item {
     private string $editora;
     private string $assunto; 
 
-    public function __construct(int $id, string $nome, array $autores, string $dataAquisicao, string $dataPublicacao, int $volume, string $editora, string $assunto) { // Corrigido: __construct em vez de __contruct
+    public function __construct(int $id, string $nome, array $autores, string $dataAquisicao, string $dataPublicacao, int $volume, string $editora, string $assunto) {
         parent::__construct($id, $nome, $autores, $dataAquisicao); 
         $this->dataPublicacao = $dataPublicacao;
         $this->volume = $volume;

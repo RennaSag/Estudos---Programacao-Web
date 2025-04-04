@@ -7,7 +7,7 @@ abstract class Item{
     protected string $dataAquisicao;
     
 
-    public function __construct(int $id, string $nome, string $autores, string $dataAquisicao){
+    public function __construct(int $id, string $nome, array $autores, string $dataAquisicao){
         $this->id = $id;
         $this->nome = $nome;
         $this->autores = $autores;
@@ -16,13 +16,9 @@ abstract class Item{
 
     abstract public function imprimirDados(): void;
 
-
-
     public function getId(): int{
         return $this->id;
     }
-
-
 
     public function getNome(): string{
         return $this->nome;
@@ -31,16 +27,12 @@ abstract class Item{
         $this->nome = $nome;
     }
 
-
-
-    public function getAutores(): string {
+    public function getAutores(): array {
         return $this->autores;
     }
-    public function setAutores(string $autores): void{
+    public function setAutores(array $autores): void{
         $this->autores = $autores;
     }
-
-
 
     public function getDataAquisicao(): string {
         return $this->dataAquisicao;

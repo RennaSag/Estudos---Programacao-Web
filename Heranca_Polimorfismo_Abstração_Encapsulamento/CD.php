@@ -3,7 +3,7 @@ class CD extends Item {
     private string $generoMusical;
     private string $faixas;
 
-    public function __construct(int $id, string $nome, string $dataAquisicao, array $autores, string $generoMusical, string $faixas) { // Corrigido: autores como array
+    public function __construct(int $id, string $nome, string $dataAquisicao, array $autores, string $generoMusical, string $faixas) {
         parent::__construct($id, $nome, $autores, $dataAquisicao);
         $this->generoMusical = $generoMusical;
         $this->faixas = $faixas;
