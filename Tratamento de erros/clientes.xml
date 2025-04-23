@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientes>
+  <cliente>
+    <nome>renna</nome>
+    <email>email</email>
+    <sexo>naoinfo</sexo>
+    <estadoCivil>casado</estadoCivil>
+    <observacoes>obs</observacoes>
+    <endereco>
+      <rua>rua</rua>
+      <bairro>bairro</bairro>
+      <cidade>cidade</cidade>
+      <estado>go</estado>
+      <cep>cep</cep>
+    </endereco>
+  </cliente>
+  <cliente>
+    <nome>renna</nome>
+    <email>email</email>
+    <sexo>naoinfo</sexo>
+    <estadoCivil>casado</estadoCivil>
+    <observacoes>obs</observacoes>
+    <endereco>
+      <rua>rua</rua>
+      <bairro>bairro</bairro>
+      <cidade>cidade</cidade>
+      <estado>go</estado>
+      <cep>cep</cep>
+    </endereco>
+  </cliente>
+  <cliente>
+    <nome>leonardo</nome>
+    <email>email</email>
+    <sexo>naoinfo</sexo>
+    <estadoCivil>casado</estadoCivil>
+    <observacoes>nss</observacoes>
+    <endereco>
+      <rua>rua</rua>
+      <bairro>bairro</bairro>
+      <cidade>cidade</cidade>
+      <estado>go</estado>
+      <cep>cep</cep>
+    </endereco>
+  </cliente>
+</clientes>
